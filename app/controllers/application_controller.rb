@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   def hello
     if session[:name]
-
+      render 'hello'
     else
       redirect_to login_path
     end
